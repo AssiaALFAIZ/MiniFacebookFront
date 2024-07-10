@@ -1,0 +1,109 @@
+/* Ajoute des styles pour le conteneur principal */
+.section-container {
+  padding: 50px; /* Ajoute de l'espace autour du contenu */
+}
+
+/* Personnalise le style du conteneur de la carte */
+.card-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère à la carte */
+}
+
+/* Personnalise le style de la partie gauche avec le gradient */
+.mb-3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+}
+
+.gradient-custom {
+  background: linear-gradient(to bottom, rgb(224, 176, 226), rgb(130, 79, 193));
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding: 20px;
+  align-items: center;
+  margin-left: 15%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.p-4{
+  background-color:rgb(149, 173, 195);
+  width: 60%;
+  text-align: center;
+}
+
+.avatar-image {
+  width: 80px;
+  border-radius: 50%; 
+}
+
+.name-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.position-text {
+  font-size: 1rem;
+  color: #fff; 
+}
+
+.information-section {
+  padding: 20px;
+}
+
+.info-text {
+  font-size: 1rem;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin-right: 10px;
+  color: #fff; 
+}
+
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.separator-line {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+.edit{
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+
+.progress-bar {
+  border-radius: 10px;
+}
+
+.mt-2 p {
+  margin: 0;
+  color: #fff
+}
+
+/* Customize the button style */
+button {
+  background-color: #95ADC3;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.save{
+  margin-top: 10px;
+  background-color: rgb(130, 79, 193);
+}

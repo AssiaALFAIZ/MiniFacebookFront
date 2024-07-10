@@ -1,0 +1,43 @@
+/* Navbar styles */
+.navbar {
+    background-color:#594157;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .facebookIcon{
+    margin-top: 4px;
+    width: 45px;
+    height: 45px;
+    margin-right: 6px;
+    margin-top: 4px;
+    
+  }
+  h1{
+    color: #e485fc;
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+  }
+  .post-button{
+    background-color: #84d5ff;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1px;
+  }
+  

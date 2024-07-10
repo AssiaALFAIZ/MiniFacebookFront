@@ -1,0 +1,429 @@
+/* App.css */
+
+.create-post,
+.post {
+ 
+  margin: 0 auto; /* Pour centrer horizontalement */
+  padding: 20px;
+  background-color: #f0f2f5; /* Light gray background for posts */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Add a border around posts */
+  margin-bottom: 20px;
+  width: 600px;
+  margin-right: 190px;
+ 
+   /* Pour occuper toute la largeur disponible */
+}
+
+.post-container {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  top: 0;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white; /* Light gray background for posts */
+  border: 1px solid #ccc; /* Add a border around posts */
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 .25rem .5rem -.5rem rgba(0, 0, 0, .75);
+  margin-right: 190px;
+  
+ 
+  
+  margin-top:7%;
+ 
+ 
+  
+}
+.post-container h2{
+  font-family: 'Changa', sans-serif;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+.post-textarea {
+  width: 95%;
+  padding: 1px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 .25rem .5rem -.5rem rgba(0, 0, 0, .75);
+  resize: vertical;
+  font-family: 'Changa', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'Kalam', cursive;
+}
+
+
+.create-post button,
+.post-button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 30px;
+  background-color: #84d5ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.create-post button:hover,
+.post-button:hover {
+  background-color: #84d5ff; /* Slightly darker blue on hover */
+}
+
+/* Post styles */
+.post-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  width: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  
+  /* Centrer l'image verticalement et horizontalement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Texte du post styles */
+.post-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.6; /* Espacement des lignes amélioré pour une meilleure lisibilité */
+  text-align: center; /* Centrer le texte à l'intérieur du post */
+}
+
+
+
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.robot{
+  margin-top: 50%;
+  margin-left: 2%;
+  width: 80px;
+  height: 80px;
+}
+
+
+
+/* Home.css */
+
+.post {
+  
+    width:600px;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 .25rem .5rem -.5rem rgba(0, 0, 0, .75);
+  
+}
+
+.post__top {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 1rem;
+}
+
+.post__avatar {
+    margin-right: 0.625rem;
+}
+
+.post__topInfo>h3 {
+    font-size: medium;
+}
+
+.post__topInfo>p {
+    font-size: small;
+    color: gray;
+    margin-right: 2px;
+}
+
+.post__bottom {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-family: 'Kalam', cursive;
+    font-size:20px;
+}
+
+.post__bottom>p {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.post__image>img {
+    width: 100%;
+}
+.post__image{
+  max-width: 100%;
+}
+.post__options {
+    padding-top: 0.625rem;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+    color: gray;
+    cursor: pointer;
+    padding: 1rem;
+    
+}
+
+.post__option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .25rem;
+    flex: 1;
+}
+
+.post__option>p {
+    margin-left: .625rem;
+}
+
+.post__option:hover {
+    background-color: #eff2f5;
+    border-radius: .625rem;
+}
+
+@media (max-width: 700px) {
+    .post {
+        width: 95%;
+        max-width: 95vw;
+    }
+}
+/* Styles pour la section Like et Comment */
+.post__likeCommentSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.post__like,
+.post__comment {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.post__like:hover,
+.post__comment:hover {
+  text-decoration: underline;
+  color: #84d5ff; /* Couleur bleue pour les liens */
+}
+
+/* CSS pour la section du composant React */
+.post__topInfo {
+  display: flex;
+  align-items: center;
+}
+
+.post__topInfo h3 {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.post__topInfo p {
+  font-size: 17px;
+  color: #888;
+  margin-left: 200px;
+}
+
+.post__avatar img {
+  width: 70px; /* Définissez la largeur souhaitée */
+  height: 70px; /* Définissez la hauteur souhaitée */
+  border-radius: 50%; /* Pour obtenir une forme d'avatar circulaire, si nécessaire */
+}
+.post-header{
+  font-family: 'Changa', sans-serif;
+  font-family: 'Kalam', cursive;
+  margin-left: 10px;
+
+}
+
+.user-info {
+  display: flex; /* Utiliser la flexbox pour organiser les éléments horizontalement */
+  align-items: center; /* Aligner les éléments verticalement au centre */
+}
+/* Ajouter ces styles dans votre fichier CSS */
+
+.icon-image{
+  width: 40px; /* Ajustez la largeur souhaitée */
+  height: 40px; /* Ajustez la hauteur souhaitée */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+  
+}
+
+.robot{
+  margin-top: 25%;
+  margin-left: 2%;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  cursor: pointer;
+  right: 1250px;
+}
+
+
+.rightbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top:0%;
+  width: 50%;
+  position: absolute;
+  left: 500px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top:0%;
+  width: 70%;
+  position: absolute;
+  right: 5000px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin: 0.1rem; /* Adjust the margin to control the spacing between icons */
+  max-width: 200px; 
+
+}
+
+.icon-container>h3 {
+  font-size: medium;
+  margin-left: 0.625rem;
+ 
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem;
+}
+
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  margin:0.000001em;
+  margin-right: 500px;
+  size: small;
+}
+
+
+.comment {
+  background-color: #f0f2f5; /* Light gray background for comments */
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.comment:before {
+  content: '\f075'; /* Facebook comment icon (FontAwesome) */
+  font-family: FontAwesome;
+  font-size: 18px;
+  margin-right: 10px;
+  color: #1877f2;
+}
+
+/* Add hover effect for comments */
+.comment:hover {
+  background-color: #e0e2e5; /* Lighter gray background on hover */
+}
+/* Comment styles */
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+  resize: vertical;
+}
+
+
+.imgComment{
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 6px;
+}
+.commentContainer{
+  display: flex;
+  align-items: center;
+}
+.comment-input {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5; /* Couleur de fond du champ de commentaire */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.comment-input input {
+  flex: 1; /* Le champ de commentaire s'étendra pour remplir l'espace disponible */
+  border: none;
+  outline: none; /* Supprime la bordure du champ au focus */
+  background: transparent;
+  font-size: 16px;
+  padding: 0; /* Supprime le rembourrage intérieur */
+}
+
+.comment-input button {
+  background-color: #84d5ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px; /* Espace entre le champ et le bouton */
+}
+
+/* Styles supplémentaires pour vos éléments, comme les boutons, les images, etc. */
